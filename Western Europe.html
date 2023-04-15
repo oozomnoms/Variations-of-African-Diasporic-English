@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Western Europe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="other pages.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {font-family: "Questrial", sans-serif}
+  h2, h3 {
+    font-family: "Playfair Display", serif;
+  }
+  .mySlides {display: none}
+  table {
+    font-family: "Questrial", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #bc572c;
+    text-align: center;
+    padding: 8px;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"></a>
+    <a href="index.html"class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+   
+    <a href="North America.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">North America</a>
+    <a href="West Africa.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">West Africa</a>
+    <a href="Western Europe.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Western Europe</a>
+    <a href="Central America.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Central America (Caribbean)</a>
+    
+    
+    
+   
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;">
+
+ 
+
+  <!-- mle Section -->
+  <div class="north america" style=" background-color: #e0a076;">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+
+    
+    <h2 class="w3-wide">Western Europe</h2>
+    <p class="w3-opacity"><i>Brief History</i></p>
+    <p class="w3-justify">Western European languages mostly fall within two Indo-European language families: the Romance languages, descended from the Latin of the Roman Empire; and the Germanic languages, whose ancestor language (Proto-Germanic) came from southern Scandinavia. A thousand years later, British merchants became major participants in the Atlantic slave trade in the early modern period. As part of the triangular trade-system, ship-owners transported enslaved West Africans to European possessions in the New World (especially to British colonies in the West Indies) to be sold there. The ships brought commodities back to Britain then exported goods to Africa. Some plantation owners brought slaves to Britain, where many of them ran away from their masters.  
+    </p>
+
+    <img src="imagesblack/Western_Europe_map_blue.png" width="400px" alt="">
+  
+      <div class="w3-third">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Multicultural London English -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Multicultural London English</h2>
+      <p class="w3-opacity w3-center"><i>What, fam?</i></p><br>
+<p class="w3-center">
+      <img src="imagesblack/Araloyin_Oshunremi.webp" width="350px" alt="">
+
+      <p class="w3-opacity w3-center"><i>Araloyin Oshunremi, actor hailing from Hackney, London, England and of Yoruba-Nigerian descent. Popularly known in Netflix series 'TopBoy' .</i></p><br>
+
+    <p>Multicultural London English (abbreviated MLE) is a sociolect of English that emerged in the late 20th century. It is spoken mainly by young, working-class people in multicultural parts of London.
+
+      As the label suggests, speakers of MLE come from a wide variety of ethnic and cultural backgrounds, and live in diverse neighbourhoods. As a result, it can be regarded as a multiethnolect.
+      MLE is rooted mostly in the widespread migration from the Caribbean to the UK following World War II, and to a lesser extent the migration from other areas such as South Asia and West Africa.
+    </p>
+
+     <h3>Well, How Do Their Sentences Work?</h3>
+
+     <table>
+      <tr>
+        <th>Standard English</th>
+        <th>Multicultural London English</th>
+      </tr>
+      <td>My child does not want to go to school</td>
+    <td> My yute isnt tryna go to school</td>
+  </table>
+
+     <h3>That's Cool! Can I hear Someone Speak?</h3>
+     <p class="w3-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6_P1t6PujsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+    </p>
+    </div>
+  </div>
+
+    
+
+  
+  
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
